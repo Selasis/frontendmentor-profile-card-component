@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Kumbh+Sans:regular,700&display=swap" rel="stylesheet" />
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Kumbh Sans";
+    font-size: 14px;
+  }
+
+  html,
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    padding: 10px;
+  }
+
+.page { }
+.card { }
+.card__container { 
+  max-width: 400px;
+  margin: 0 auto;
+}
+.card__body { 
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card__image { 
+  
+}
+.card__image img { 
+  width: 100%;
+}
+.card__info { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(139, 137, 137, 0.2);
+}
+.card__profile {
+  margin: -50px 0px 0px 0px;
+  outline: 6px solid #fff;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.card__profile img{ 
+  border-radius: 50%;
+  overflow: hidden;
+}
+.card__title { 
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: hsl(229, 23%, 23%);
+}
+.card__title span {
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(229, 23%, 23%);
+}
+.card__city { 
+  letter-spacing: 0.7px;
+  color: hsl(227, 10%, 46%);
+}
+.card__data { 
+  display: flex;
+  margin: 25px 25px;
+}
+.card__column { 
+  flex: 0 1 33.333%;
+  text-align: center;
+}
+.data-item { }
+.data-item__title { 
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+.data-item__subtitle { 
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  color: hsl(227, 10%, 46%);
+}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <div class="card__container">
+        <div class="card__body">
+          <div class="card__image">
+            <img src="images/bg-pattern-card.svg" alt="">
+          </div>
+          <div class="card__info">
+            <div class="card__profile">
+              <img src="images/image-victor.jpg" alt="">
+            </div>
+            <div class="card__title">Victor Crest <span>26</span></div>
+            <div class="card__city">London</div>
+          </div>
+          <div class="card__data">
+            <div class="card__column">
+              <div class="data-item">
+                <div class="data-item__title">80K</div>
+                <div class="data-item__subtitle">Followers</div>
+              </div>
+            </div>
+            <div class="card__column">
+              <div class="data-item">
+                <div class="data-item__title">803K</div>
+                <div class="data-item__subtitle">Likes</div>
+              </div>
+            </div>
+            <div class="card__column">
+              <div class="data-item">
+                <div class="data-item__title">1.4K</div>
+                <div class="data-item__subtitle">Photos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
